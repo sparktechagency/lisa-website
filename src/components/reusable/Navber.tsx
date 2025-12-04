@@ -28,6 +28,7 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState<boolean>(false);
   const [featuresDropdownOpen, setFeaturesDropdownOpen] = useState<boolean>(false);
+  const [imageError, setImageError] = useState<boolean>(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -224,16 +225,24 @@ export default function Navbar() {
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
 
-          {/* Logo */}
+          {/* Logo - Fixed with fallback */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/icons/logo.png"
-              alt="website logo"
-              height={60}
-              width={60}
-              className="rounded-xl"
-              unoptimized
-            />
+            {!imageError ? (
+              <Image
+                src="/icons/logo.png"
+                alt="website logo"
+                height={60}
+                width={60}
+                className="rounded-xl"
+                priority
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              // Fallback logo if image fails to load
+              <div className="h-[60px] w-[60px] rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl">
+                iD
+              </div>
+            )}
           </Link>
         </div>
 
