@@ -232,6 +232,7 @@ export default function Navbar() {
               height={60}
               width={60}
               className="rounded-xl"
+              unoptimized
             />
           </Link>
         </div>
