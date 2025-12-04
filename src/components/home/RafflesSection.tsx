@@ -53,7 +53,7 @@ export default function RafflesSection() {
               <span className="text-teal-600 font-semibold">
                 also support causes that truly matter!
               </span>{' '}
-              Pick your favourite cause, join the raffle, and good luck!
+              
             </p>
 
             <Button

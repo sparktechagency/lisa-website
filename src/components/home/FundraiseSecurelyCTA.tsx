@@ -30,12 +30,12 @@ export default function FundraiseSecurelyCTA() {
 
           {/* Heading */}
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight px-4">
-            Raise more. Spend less. iDonate, the trusted fundraising platform
+            Monthly Prize Draw – Win Big, Support Good Causes!
           </h1>
 
           {/* Description */}
           <p className="text-gray-600 text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-4">
-            Choose Ireland&apos;s leading fundraising platform and you can amplify your social impact, save money, and offer more to those in need. Join us today and turn every contribution into a powerful act of change.
+            Join our monthly prize draw for a chance to win fantastic cash prizes! Every ticket you purchase not only gives you the opportunity to win, but also helps support the cause of your choice. The more tickets sold, the bigger the prizes—and the more you help your chosen charity or cause. It&apos;s a win-win for everyone!   and add a button to go to the monthly cash draw page please
           </p>
 
           {/* CTA Button */}

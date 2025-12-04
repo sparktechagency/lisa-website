@@ -49,10 +49,7 @@ export default function PartnersSection() {
           {/* Description */}
           <div className="space-y-4 max-w-4xl mx-auto px-4">
             <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
-              RaffleRise stands out as a trusted platform backing over 5,000 causes throughout Ireland. Our innovative online fundraising, raffles, event registration, and ticketing solutions have earned the trust of millions.
-            </p>
-            <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
-              With a 0% Platform Fee, we ensure that your chosen cause receives maximum benefits. At iDonate, our best-in-class local support is available to guarantee the success of your campaign.
+              Raffle and Give offers charities and community causes a powerful, modern way to raise more money with less effort. By combining crowdfunding, raffle fundraisers and our guaranteed monthly cash draw, supporters stay more engaged and excited to take part. Our platform is simple to use, secure, and completely free to set up — giving every cause its own personalised fundraising page that can be shared instantly. With raffles that attract attention, crowdfunding for deeper support, and a monthly cash prize for supporters, Raffle and Give helps charities raise more, reach more people and create a bigger impact in their communities — making it a fundraising solution where everyone wins.
             </p>
           </div>
 
