@@ -22,6 +22,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
@@ -239,9 +240,15 @@ export default function Navbar() {
               />
             ) : (
               // Fallback logo if image fails to load
-              <div className="h-[60px] w-[60px] rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl">
-                iD
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="website logo"
+                height={60}
+                width={60}
+                className="rounded-xl"
+                priority
+                onError={() => setImageError(true)}
+              />
             )}
           </Link>
         </div>
