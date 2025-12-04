@@ -10,7 +10,7 @@ import { ChangeEvent, KeyboardEvent, useRef, useState } from 'react';
 export default function AccountRecovery() {
   const [otp, setOtp] = useState<string[]>(['', '', '', '']);
   const [error, setError] = useState<string>('');
-  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+  const inputRefs = useRef<(HTMLInputElement | null)[]>(Array(4).fill(null));
   const router = useRouter();
 
   const handleChange = (index: number, e: ChangeEvent<HTMLInputElement>) => {
@@ -45,7 +45,7 @@ export default function AccountRecovery() {
     }
   };
 
-  const handlePaste = (e: React.ClipboardEvent) => {
+  const handlePaste = (e: React.ClipboardEvent<HTMLInputElement>) => {
     e.preventDefault();
     const pastedData = e.clipboardData.getData('text').slice(0, 4);
 
@@ -69,8 +69,6 @@ export default function AccountRecovery() {
     }
 
     console.log('Verifying OTP:', otpValue);
-    // alert(`Verification code ${otpValue} submitted!`);
-
     router.push('/auth/create-new-password');
   };
 
@@ -90,7 +88,14 @@ export default function AccountRecovery() {
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <div className="w-16 h-16 rounded-xl flex items-center justify-center">
-              <Image src={"/icons/Logo.png"} alt='website logo' height={60} width={60} className='rounded-xl' />
+              <Image
+                src={"/icons/Logo.png"}
+                alt="website logo"
+                height={60}
+                width={60}
+                className="rounded-xl"
+                priority
+              />
             </div>
           </div>
 
@@ -99,7 +104,7 @@ export default function AccountRecovery() {
           </h1>
 
           <p className="text-center text-gray-600 text-sm mb-8 px-4">
-            To help keep your account safe, House Finder wants to make sure it's really you trying to sign in.
+            To help keep your account safe, House Finder wants to make sure it&apos;s really you trying to sign in.
           </p>
 
           <div className="mb-8">
@@ -118,7 +123,9 @@ export default function AccountRecovery() {
                 {otp.map((digit, index) => (
                   <Input
                     key={index}
-                    ref={(el) => (inputRefs.current[index] = el)}
+                    ref={(el: HTMLInputElement | null) => {
+                      inputRefs.current[index] = el;
+                    }}
                     type="text"
                     inputMode="numeric"
                     maxLength={1}
@@ -127,6 +134,7 @@ export default function AccountRecovery() {
                     onKeyDown={(e) => handleKeyDown(index, e)}
                     onPaste={index === 0 ? handlePaste : undefined}
                     className="w-16 h-16 text-center text-2xl font-semibold"
+                    aria-label={`OTP digit ${index + 1}`}
                   />
                 ))}
               </div>
@@ -145,13 +153,14 @@ export default function AccountRecovery() {
 
             {/* Resend Link */}
             <p className="text-center text-sm text-gray-600">
-              Didn't receive the code?{' '}
-              <span
+              Didn&apos;t receive the code?{' '}
+              <button
                 onClick={handleResend}
-                className="text-[#00715D] hover:underline font-medium cursor-pointer"
+                className="text-[#00715D] hover:underline font-medium cursor-pointer bg-transparent border-none p-0"
+                type="button"
               >
                 Resend
-              </span>
+              </button>
             </p>
           </div>
         </div>
@@ -164,8 +173,10 @@ export default function AccountRecovery() {
           alt="Charity donation jar"
           fill
           className="object-cover"
+          sizes="50vw"
           placeholder="blur"
           blurDataURL="/images/blur-placeholder.jpg"
+          priority
         />
       </div>
     </div>

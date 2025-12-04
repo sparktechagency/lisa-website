@@ -231,7 +231,7 @@ const DonationApp = () => {
                   </h1>
                   <p className="text-xs text-gray-600 mb-2">Your donation will go to:</p>
                   <p className="text-xs text-gray-800 leading-relaxed">
-                    The Jack & Jill Children's Foundation, LauraLynn Ireland's Children's Hospice,
+                    The Jack & Jill Children&apos;s Foundation, LauraLynn Ireland&apos;s Children&apos;s Hospice,
                     ISPCC Childline, Barretstown, Barnardos and Make-A-Wish Ireland
                   </p>
                 </div>

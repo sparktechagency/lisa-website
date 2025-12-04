@@ -132,7 +132,7 @@ export default function FundraisingPage() {
                         <p>Thank you for taking the time to visit our fundraising page on RaffleRise.ie</p>
 
                         <p>
-                          We've chosen to fundraise for <strong>The Jack & Jill Children's Foundation, LauraLynn Ireland's Children's Hospice, ISPCC Childline, Barretstown, Barnardos and Make-A-Wish Ireland</strong>. All funds raised here will go directly to these great causes.
+                          We&apos;ve chosen to fundraise for <strong>The Jack & Jill Children&apos;s Foundation, LauraLynn Ireland&apos;s Children&apos;s Hospice, ISPCC Childline, Barretstown, Barnardos and Make-A-Wish Ireland</strong>. All funds raised here will go directly to these great causes.
                         </p>
 
                         <p>

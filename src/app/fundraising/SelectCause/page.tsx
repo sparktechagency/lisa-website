@@ -69,49 +69,49 @@ const CauseSelector = () => {
     router.back(); // Or router.push('/some-other-page');
   };
 
-  const LogoSVG = () => (
-    <svg
-      width="100%"
-      height="auto"
-      viewBox="0 0 180 120"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="max-w-[140px] sm:max-w-[160px] md:max-w-[180px] mx-auto"
-    >
-      {/* Sun rays */}
-      <g transform="translate(90, 45)">
-        {[...Array(12)].map((_, i) => {
-          const angle = (i * 30 * Math.PI) / 180;
-          const x1 = Math.cos(angle) * 28;
-          const y1 = Math.sin(angle) * 28;
-          const x2 = Math.cos(angle) * 42;
-          const y2 = Math.sin(angle) * 42;
-          return (
-            <rect
-              key={i}
-              x={x1 - 3}
-              y={y1 - 1}
-              width={Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}
-              height="8"
-              fill="#FDB71A"
-              transform={`rotate(${i * 30} ${x1} ${y1})`}
-              rx="3"
-            />
-          );
-        })}
-      </g>
-      {/* Sun circle */}
-      <circle cx="90" cy="45" r="25" fill="#EF4444" />
+  // const LogoSVG = () => (
+  //   <svg
+  //     width="100%"
+  //     height="auto"
+  //     viewBox="0 0 180 120"
+  //     fill="none"
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     className="max-w-[140px] sm:max-w-[160px] md:max-w-[180px] mx-auto"
+  //   >
+  //     {/* Sun rays */}
+  //     <g transform="translate(90, 45)">
+  //       {[...Array(12)].map((_, i) => {
+  //         const angle = (i * 30 * Math.PI) / 180;
+  //         const x1 = Math.cos(angle) * 28;
+  //         const y1 = Math.sin(angle) * 28;
+  //         const x2 = Math.cos(angle) * 42;
+  //         const y2 = Math.sin(angle) * 42;
+  //         return (
+  //           <rect
+  //             key={i}
+  //             x={x1 - 3}
+  //             y={y1 - 1}
+  //             width={Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}
+  //             height="8"
+  //             fill="#FDB71A"
+  //             transform={`rotate(${i * 30} ${x1} ${y1})`}
+  //             rx="3"
+  //           />
+  //         );
+  //       })}
+  //     </g>
+  //     {/* Sun circle */}
+  //     <circle cx="90" cy="45" r="25" fill="#EF4444" />
 
-      {/* Text */}
-      <text x="90" y="75" textAnchor="middle" fill="#0066A1" fontSize="20" fontWeight="700" fontFamily="Arial, sans-serif">
-        North West
-      </text>
-      <text x="90" y="95" textAnchor="middle" fill="#0066A1" fontSize="20" fontWeight="700" fontFamily="Arial, sans-serif">
-        Hospice
-      </text>
-    </svg>
-  );
+  //     {/* Text */}
+  //     <text x="90" y="75" textAnchor="middle" fill="#0066A1" fontSize="20" fontWeight="700" fontFamily="Arial, sans-serif">
+  //       North West
+  //     </text>
+  //     <text x="90" y="95" textAnchor="middle" fill="#0066A1" fontSize="20" fontWeight="700" fontFamily="Arial, sans-serif">
+  //       Hospice
+  //     </text>
+  //   </svg>
+  // );
 
   return (
     <div className="">

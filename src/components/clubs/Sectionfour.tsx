@@ -42,7 +42,7 @@ export default function SectionFour() {
 
               <div className="space-y-3 sm:space-y-4 text-gray-600">
                 <p className="text-base sm:text-lg leading-relaxed">
-                  Need to raise even more? RaffleRise allows sports clubs to run large-scale custom fundraising events. Whether you're hosting a Strictly Come Dancing, Golf Tournament, or Charity Run, RaffleRise provides the tools to:
+                  Need to raise even more? RaffleRise allows sports clubs to run large-scale custom fundraising events. Whether you&apos;re hosting a Strictly Come Dancing, Golf Tournament, or Charity Run, RaffleRise provides the tools to:
                 </p>
 
                 <div className="space-y-2 text-base sm:text-lg">

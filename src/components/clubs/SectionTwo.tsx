@@ -62,7 +62,7 @@ export default function SectionTwo() {
             </ul>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Whether it's for a new pitch, jerseys, or a local tournament, a fundraising page is a quick and effective way to rally your community and drive donations.
+              Whether it&apos;s for a new pitch, jerseys, or a local tournament, a fundraising page is a quick and effective way to rally your community and drive donations.
             </p>
 
             <Button

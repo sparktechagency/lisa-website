@@ -24,7 +24,7 @@ export default function SectionOne() {
 
         {/* Description */}
         <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-4xl mx-auto px-2 sm:px-4">
-          With RaffleRise, you're partnering with one of the most trusted and effective fundraising platforms in UK. We support over 5,000 clubs and causes nationwide, helping sports clubs like yours raise funds for essential needs like:
+          With RaffleRise, you&apos;re partnering with one of the most trusted and effective fundraising platforms in UK. We support over 5,000 clubs and causes nationwide, helping sports clubs like yours raise funds for essential needs like:
         </p>
 
         {/* Bullet Points */}

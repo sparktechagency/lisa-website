@@ -119,7 +119,7 @@ export default function CreateNewPassword() {
           </h1>
 
           <p className="text-center text-gray-600 text-sm mb-8 leading-relaxed px-4">
-            To help keep your account safe, House Finder wants to make sure it's really you trying to sign in.
+            To help keep your account safe, House Finder wants to make sure it&apos;s really you trying to sign in.
           </p>
 
           <div className="space-y-5" onKeyPress={handleKeyPress}>

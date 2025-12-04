@@ -232,7 +232,7 @@ export default function SignInForm() {
 
             {/* Sign Up Link */}
             <p className="text-center text-sm text-gray-600 mt-6">
-              Don't have an account yet?{' '}
+              Don&apos;t have an account yet?{' '}
               <span onClick={() => router.push("/auth/signup")} className="text-[#00715D] hover:underline font-medium cursor-pointer">
                 Sign Up
               </span>

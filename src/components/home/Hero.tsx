@@ -66,7 +66,7 @@ export default function Hero() {
                     onClick={handleStartNow}
                     className="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-semibold h-12 px-6  sm:px-8 rounded-md"
                   >
-                    Start Now -It's Free! <ArrowRight className="ml-3  w-4 h-4" />
+                    Start Now -It&apos;s Free! <ArrowRight className="ml-3  w-4 h-4" />
                   </Button>
                   <Button
                     onClick={handleCreateRaffle}

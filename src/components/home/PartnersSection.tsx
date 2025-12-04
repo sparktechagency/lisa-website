@@ -1,7 +1,6 @@
 "use client";
 
 import { Badge } from '@/components/ui/badge';
-import { Handshake } from 'lucide-react';
 import Image from 'next/image';
 
 export default function PartnersSection() {
